@@ -81,14 +81,13 @@ AC   AS-0004
 DE   An alteration whereby an input and output differ in a small way.
 UF   Polymers that undergo addition or removal of a covalent or non-covalent
 UF   attachment to one or more component monomers while the polymer length
-UF   is unchanged.
+UF   is unchanged. For proteins, modifications are co- or post-translational
+UF   changes to amino acids. For DNA and RNA, modifications are epigenetic (DNA)
+UF   or post-transcriptional (RNA) changes to nucleobases.
 HI   modification
 EQ   Alteration; NCIT:C28344
 EX   AKT1 S473 Phosphorylation; https://biomarkerkb.org/canonical/AN4659
-NT   Modification as used here refers specifically to the addition or removal
-NT   of a chemical moiety to one or more monomeric units of a polymer. For
-NT   proteins, modifications are co- or post-translational changes to amino
-NT   acids. For DNA and RNA, modifications are epigenetic (DNA) or
-NT   post-transcriptional (RNA) changes to nucleobases.
+NT   Except in rare cases, this term should not be used directly. Instead, a
+NT   specific modification should be indicated.
 //
 
