@@ -8,6 +8,7 @@ Description: BiomarkerKB controlled vocabulary for indicating the type of
              change being observed for each biomarker.
 Name:        change_type.txt
 Release:     2026_02_17
+Location:    https://github.com/clinical-biomarkers/biomarker-controlled-vocabulary/blob/main/change_type.txt
 
 --------------------------------------------------------------------------------
 
