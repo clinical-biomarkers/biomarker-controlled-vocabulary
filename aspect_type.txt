@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Biomarker Knowledgebase Project
+BiomarkerKB Controlled Vocabulary
+Biomarker Entity Types Controlled Vocabulary File
+--------------------------------------------------------------------------------
+
+Description: BiomarkerKB controlled vocabulary for describing which aspect of
+             the entity is being assessed for each biomarker.
+Name:        aspect_type.txt
+Release:     2026_02_17
+
+--------------------------------------------------------------------------------
+
+In the BiomarkerKB curation system, a biomarker is roughly considered to be a
+change in some aspect of an assessed entity. For example, the biomarker
+“increased IL6 level” consists of ‘increased’ (the change), ‘IL6’ (the entity),
+and ‘level’ (the aspect). This document describes the possible aspect types:
+
+    * level
+    * expression
+    * sequence variation
+    * modification
+
+Each entry consists of the following line codes:
+
+----  ----------  ---------------------------  ---------------------------------
+Code  Name        Content                      Occurrences
+----  ----------  ---------------------------  ---------------------------------
+ID    Identifier  Controlled vocabulary name   Once; starts an entry
+AC    Accession   Unique identifier (BM-xxxx)  Once
+DE    Definition  Definition/description       Once; line wrapping possible
+UF    Used For    Instructions for use         Once; line wrapping possible
+HI    Hierarchy                                Optional; zero or more
+SY    Synonym                                  Optional; zero or more
+EQ    Equivalent  External identifier with     Optional; zero or more
+                    same meaning
+EX    Example     A biomarker that uses        Optional; zero or once; line
+                    the indicated entity         wrapping possible
+NT    Notes                                    Optional; zero or once; line
+                                                 wrapping possible
+//    Terminator  End of entry                 Once; ends an entry
+
+--------------------------------------------------------------------------------
+
+ID   level
+AC   AS-0001
+DE   A position on a scale measuring intensity, quality, or amount.
+UF   Any aspect that is quantified on a scale but for which the precise aspect
+UF   is unknown/unstated; may also be used in place of more specific aspects.
+HI   level
+EQ   Level; NCIT:C25554
+EX   increased IL6 level; https://biomarkerkb.org/canonical/AN6278
+//
+
+ID   expression
+AC   AS-0002
+DE   The process of converting a gene's sequence into a mature gene product
+DE   (protein or RNA).
+UF   When quantifying mRNA or protein levels, usually using a relative scale
+UF   (e.g., “3-fold”).
+HI   expression
+EQ   gene expression; GO:0010467
+EX   increased expression of ERBB2; https://biomarkerkb.org/canonical/AN5065
+//
+
+ID   sequence variation
+AC   AS-0003
+DE   For polymers, any difference between the observed order of monomer units
+DE   within a polymer chain and the order within a suitably comparable reference
+DE   polymer.
+UF   Entities that differ when specifically comparing sequences; includes
+UF   polymorphisms and mutations of genetic material and proteins.
+HI   sequence variation
+EQ   sequence_alteration; SO:0001059
+EX   presence of rs11571833 mutation in BRCA2;
+EX   https://biomarkerkb.org/canonical/AN7363
+//
+
+ID   modification
+AC   AS-0004
+DE   An alteration whereby an input and output differ in a small way.
+UF   Polymers that undergo addition or removal of a covalent or non-covalent
+UF   attachment to one or more component monomers while the polymer length
+UF   is unchanged.
+HI   modification
+EQ   Alteration; NCIT:C28344
+EX   AKT1 S473 Phosphorylation; https://biomarkerkb.org/canonical/AN4659
+NT   Modification as used here refers specifically to the addition or removal
+NT   of a chemical moiety to one or more monomeric units of a polymer. For
+NT   proteins, modifications are co- or post-translational changes to amino
+NT   acids. For DNA and RNA, modifications are epigenetic (DNA) or
+NT   post-transcriptional (RNA) changes to nucleobases.
+//
+
