@@ -8,6 +8,7 @@ Description: BiomarkerKB controlled vocabulary for describing which aspect of
              the entity is being assessed for each biomarker.
 Name:        aspect_type.txt
 Release:     2026_02_17
+Location:    https://github.com/clinical-biomarkers/biomarker-controlled-vocabulary/blob/main/aspect_type.txt
 
 --------------------------------------------------------------------------------
 
