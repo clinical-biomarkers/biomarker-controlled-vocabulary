@@ -21,6 +21,7 @@ and ‘level’ (the aspect). This document describes the possible change types:
     * decreased
     * presence of
     * absence of
+    * differential
 
 Each entry consists of the following line codes:
 
@@ -45,8 +46,8 @@ NT    Notes                                    Optional; zero or once; line
 
 ID   increased
 AC   CH-0001
-DE   Indicates that some aspect of an assessed biomarker entity is higher than
-DE   normal by a clinically relevant degree.
+DE   An indication that some aspect of an assessed biomarker entity is higher
+DE   than normal by a clinically relevant degree.
 UF   Any assessment of scale. Examples: count, level, activity, copy number.
 HI   increased
 EQ   increased quality; PATO:0002300
@@ -55,8 +56,8 @@ EX   increased IL6 level; https://biomarkerkb.org/canonical/AN6278
 
 ID   decreased
 AC   CH-0002
-DE   Indicates that some aspect of an assessed biomarker entity is lower than
-DE   normal by a clinically relevant degree.
+DE   An indication that some aspect of an assessed biomarker entity is lower
+DE   than normal by a clinically relevant degree.
 UF   Any assessment of scale. Examples: count, level, activity, copy number.
 HI   decreased
 EQ   decreased quality; PATO:0002301
@@ -65,7 +66,7 @@ EX   decreased albumin level; https://biomarkerkb.org/canonical/AN6351
 
 ID   presence of
 AC   CH-0003
-DE   Indicates that some aspect of an assessed biomarker entity is present.
+DE   An indication that some aspect of an assessed biomarker entity is present.
 UF   Any assessment of binary outcome. Examples: occurrence of specific sequence
 UF   variation, occurrence of morphological change, occurrence of modification.
 HI   presence of
@@ -76,7 +77,7 @@ EX   https://biomarkerkb.org/canonical/AO1532
 
 ID   absence of
 AC   CH-0004
-DE   Indicates that some aspect of an assessed biomarker entity is present.
+DE   An indication that some aspect of an assessed biomarker entity is present.
 UF   Any assessment of binary outcome. Examples: occurrence of specific sequence
 UF   variation, occurrence of morphological change, occurrence of modification.
 HI   absence of
@@ -85,3 +86,14 @@ EX   absence of glycosylation on CD274;
 EX   https://biomarkerkb.org/canonical/BB3816
 //
 
+ID   differential
+AC   CH-0005
+DE   An indication that some aspect of an assessed biomarker entity deviates
+DE   from normal by a clinically relevant degree.
+UF   Quantitative measurements or qualitative observations for which the
+UF   directionality of dissimilarity is unstated or inconsequential.
+HI   differential
+SY   abnormal
+EQ   difference; NCIT:C46003
+EX   differential expression of Rad50; https://biomarkerkb.org/canonical/BB1486
+//
