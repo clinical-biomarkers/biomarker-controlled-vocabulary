@@ -94,6 +94,8 @@ UF   Quantitative measurements or qualitative observations for which the
 UF   directionality of dissimilarity is unstated or inconsequential.
 HI   differential
 SY   abnormal
+EQ   abnormal; PATO:0000460
+EQ   abnormal; NCIT:C25401
 EQ   difference; NCIT:C46003
 EX   differential expression of Rad50; https://biomarkerkb.org/canonical/BB1486
 //
