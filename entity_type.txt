@@ -26,6 +26,7 @@ and ‘level’ (the aspect). This document describes the possible entity types:
     * image
     * metabolite
     * element
+    * gene
 
 Each entry consists of the following line codes:
 
@@ -79,8 +80,7 @@ ID   DNA
 AC   EN-0003
 DE   A polymer of deoxyribose-containing nucleotides linked by phosphodiester
 DE   bonds.
-UF   Entities that are composed of DNA when measured in bulk, or that are direct
-UF   or proxy measures of gene expression.
+UF   Entities that are composed of DNA when measured in bulk.
 HI   DNA
 EQ   DNA; MESH:D004247
 EX   cell-free DNA; https://biomarkerkb.org/canonical/AN6380
@@ -155,3 +155,15 @@ EQ   elemental molecular entity; CHEBI:33259
 EX   sodium; https://biomarkerkb.org/canonical/BB2861
 //
 
+ID   gene
+AC   EN-0010
+DE   Nucleic acid sequence that functions as a unit of heredity and which codes
+DE   for the basic instructions for the development, reproduction, and
+DE   maintenance of an organism.
+UF   Entities consisting of specific regions of genetic material (or proxies
+UF   thereof) whereby some identification of sequence is required.
+HI   gene
+EQ   gene; SO:0000704
+EQ   Genes; MESH:D005796
+EX   ERBB2; https://biomarkerkb.org/canonical/AN5065
+//
